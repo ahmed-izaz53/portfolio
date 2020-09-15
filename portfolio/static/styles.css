@@ -1,0 +1,55 @@
+body{
+    margin: auto 10px;
+}
+.imgHome{
+    width: 200px;
+}
+.headerClass{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+    list-style: none;
+    margin-top:0px;
+    padding: 20px;
+    background-color: rgb(5, 156, 156);
+    
+}
+
+.navItem{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer{
+    position: fixed;
+    left: 10px;
+    bottom: 40px;
+    right: 10px;
+    border-top: 1px solid rgb(163, 158, 158);
+    height: 75px;
+    
+}
+.footer1{
+    justify-content: center;
+    padding-top: 50px;
+}
+.footerGrid{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.postTitle{
+    color: rgb(224, 92, 169);
+    text-decoration: none;
+    
+}
+.articles{
+    border: 1px solid rgb(231, 228, 225)225, 221);
+    
+}
+.body{
+    position: relative;
+    bottom: 10px;
+}
+.articleContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}

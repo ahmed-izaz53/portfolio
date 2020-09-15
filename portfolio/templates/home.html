@@ -1,0 +1,17 @@
+{% extends "root.html" %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block body %}
+ <div class="articleContainer">
+    {% for article in articles %}
+        <div class="articles">
+            <center><h1><a class="postTitle" href="{% url 'articles:article_detail' slug=article.slug %}">{{ article.title }}</a></h1>
+                <p>{{ article.summary }}</p>
+                <img src="{{ article.picture.url}}" class="imgHome"><br>
+                <strong>{{ article.writer }}</strong><br>
+                <small>category:  {{ article.category.category_name }}</small></center>
+        </div>
+    {% endfor %}
+ </div>
+
+{% endblock %}

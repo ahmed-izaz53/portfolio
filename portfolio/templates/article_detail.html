@@ -1,0 +1,12 @@
+{% extends "root.html" %}
+{% load static %}
+{% block title %} Article Detail {% endblock %}
+{% block body %}
+    <div class="articleDetail">
+        <h1><strong>{{ article.title }}</strong></h1>
+        <img src="{{article.picture.url}}">
+        <p>{{ article.description }}</p>
+        <small>--{{article.writer}}</small>
+    </div>
+
+{% endblock %}

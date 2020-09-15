@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <script src="{% static 'root.js' %}"></script>
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <header>
+        <ul class="headerClass">
+            <li><a class="navItem" href="{% url 'articles:home' %}">Home</a></li>
+            <li><a class="navItem" href="{% url 'articles:about' %}">About</a></li>
+            <li><a class="navItem" href="{% url 'articles:contact' %}">Contact</a></li>
+        </ul>
+    </header>
+    <div class="body">
+        {% block body %}
+        {% endblock %}
+    </div>
+
+    <footer class="footer">
+        <div class="footerGrid">
+            <div class="footer1">
+                All rights reserved by
+                Ahmed Izaz Bhuiyan(Asif)
+            </div>
+            <div>
+    
+            </div>
+            <div>
+                <ul class="socialLinks">
+                    <li class="socialLink1" href=""> Facebook </li>
+                    <li class="socialLink2" href=""> Twitter </li>
+                    <li class="socialLink3" href=""> Instagram </li>
+                    <li class="socialLink4" href=""> LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
